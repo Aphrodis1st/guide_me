@@ -16,12 +16,12 @@ app.use("/api/v1", router);
 
 app.use("/api/v1/docs", swaggerUi.serve, swaggerUi.setup(docs));
 app.get("/api/v1", (_req: Request, res: Response) => {
-	res.status(200).json({
-		message: "Welcome to Art's corner documentation",
-	});
+  res.status(200).json({
+    message: "Welcome to guideMe documentation",
+  });
 });
 app.get("/", (_req: Request, res: Response) => {
-	res.send(routes_home_page);
+  res.send(routes_home_page);
 });
 
 export default app;

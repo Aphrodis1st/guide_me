@@ -1,10 +1,10 @@
-import { DEPLOYED_URL, PORT, SERVER_URL } from "../utils/keys";
+import { DEPLOYED_URL, PORT } from "../utils/keys";
 
 const basicInfo = {
   openapi: "3.0.0",
   info: {
-    title: "Art's Corner",
-    description: "Art's Corner api docs",
+    title: "guideMe",
+    description: "guideMe api docs",
     version: "1.0.0",
   },
 
