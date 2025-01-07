@@ -148,10 +148,10 @@ const isProducer = async (req: Request, res: Response, next: NextFunction) => {
 
     const user_role = decoded.role;
 
-    if (user_role !== "PRODUCER") {
+    if (user_role !== "PROVIDER") {
       return res
         .status(403)
-        .json({ message: "Access denied. Producers only." });
+        .json({ message: "Access denied. Providers only." });
     }
 
     if (decoded.isPasswordExpired) {
