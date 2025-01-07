@@ -179,7 +179,7 @@ const delete_product = {
 };
 
 export const places = {
-  "/api/v1/place": {
+  "/api/v1/places": {
     post: createplace,
   },
   "/api/v1/places/": {

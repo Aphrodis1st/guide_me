@@ -13,7 +13,7 @@ const router = Router();
 router.post(
   "/",
   athenticate.authenticateUser,
-  // athenticate.isAdmin,
+  athenticate.isAdmin,
   createCategory
 );
 router.get(
@@ -28,16 +28,16 @@ router.get(
   // athenticate.isAdmin,
   getCategoryById
 );
-router.put(
+router.patch(
   "/:id",
   athenticate.authenticateUser,
-  // athenticate.isAdmin,
+  athenticate.isAdmin,
   updateCategory
 );
 router.delete(
   "/:id",
   athenticate.authenticateUser,
-  // athenticate.isAdmin,
+  athenticate.isAdmin,
   deleteCategory
 );
 

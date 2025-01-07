@@ -115,10 +115,10 @@ export const roles = {
   "/api/v1/roles/": {
     post: role_routes["create_role"],
   },
-  "/api/v1/users/{userId}/roles": {
-    post: role_routes["Assign_role"],
-  },
   "/api/v1/roles/{id}": {
-    patch: role_routes["Edit_role"],
+    post: role_routes["Edit_role"],
+  },
+  "/api/v1/roles/{userId}": {
+    patch: role_routes["Assign_role"],
   },
 };

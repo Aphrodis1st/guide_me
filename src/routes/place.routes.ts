@@ -8,7 +8,7 @@ const router = express.Router();
 router.post(
   "",
   athenticate.authenticateUser,
-  // athenticate.isAdmin,
+  athenticate.isProducer,
   fileUpload.array("images"),
   productController.createPlace
 );
@@ -29,6 +29,7 @@ router.get(
 router.patch(
   "/:id",
   athenticate.authenticateUser,
+  athenticate.isProducer,
   fileUpload.array("images", 3),
   productController.updatePlace
 );
@@ -36,7 +37,7 @@ router.patch(
 router.delete(
   "/:id",
   athenticate.authenticateUser,
-  // athenticate.isAdmin,
+  athenticate.isProducer,
   productController.deletePlace
 );
 
